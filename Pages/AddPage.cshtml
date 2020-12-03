@@ -1,0 +1,34 @@
+﻿@page
+@model eStuff.Pages.AddPageModel
+@{
+}
+<div>
+    <form method="post" asp-page="AddPage">
+        <table>
+            <tr>
+                <td class="text-black-50">Name</td>
+                <td><input type="text" asp-for="@Model.Name" /></td>
+            </tr>
+            <tr>
+                <td class="text-black-50">Last name</td>
+                <td><input type="text" asp-for="@Model.LastName" /></td>
+            </tr>
+            <tr>
+                <td class="text-black-50">Possition</td>
+                <td><input type="text" asp-for="@Model.Position" /></td>
+            </tr>
+            <tr>
+                <td class="text-black-50">Days in company</td>
+                <td><input type="text" asp-for="@Model.Position" /></td>
+            </tr>
+            <tr>
+                <td class="text-black-50">Salary</td>
+                <td><input type="text" asp-for="@Model.Salary" /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Submit" /></td>
+            </tr>
+        </table>
+    </form>
+</div>
